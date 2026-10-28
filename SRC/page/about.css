@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ole&family=Playwrite+AU+VIC+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+.cover-template img {
+    width: 25px;
+}
+.cover-template .icon-1 h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+.cover-template h5 {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 300px;
+    height: 9vh;
+    transition: 0.4s ease-out;
+    box-shadow: 1px 1px 2px 2px #ccc;
+}
+.cover-template h5:hover {
+    transform: scale(1.05);
+}
+.build-cover {
+    background-color: rgba(155, 196, 254, 0.23);
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 3px rgba(161, 151, 151, 0.356);
+    border-radius: 20px;
+    border-top: 1px solid rgba(255, 255, 255,0.2);
+    border-left: 1px solid rgba(255, 255, 255,0.4);
+    height: auto;
+    padding: 1rem;
+}
+.header-product {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+.build-cover .build-img{
+    width: 150px;
+    margin: auto;
+    border-radius: 60px 60px 0px 60px;
+    object-fit: contain;
+}
+.build-cover .title h6{
+    font-family: "Playwrite AU VIC Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+.build-cover .title {
+    padding: 5px;
+    text-align: center;
+}
+.cover-build {
+    background-color: rgba(128, 128, 128, 0);
+    padding: 2rem;
+}
+
+.cover-brand {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .brand-wrapper {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 20%,
+        #000 80%,
+        transparent
+    );
+
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+.wrapper:hover {
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+/* OrderComplete page */
+.your-order {
+    margin-top: 80px;
+}
+.done-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.done-logo img {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(5px 5px 6px gray);
+}
+table td {
+    width: 50%;
+}
+.order-payemnt {
+    z-index: 99;
+    position: relative;
+}
+.payments {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; 
+    font-weight: 700;
+    letter-spacing: .04em;
+    color: var(--clr-text);
+}
+.payments span { 
+    color: var(--clr-accent); 
+}
+/* textStyle */
+.teams {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poster-title h1 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.about-us-title p {
+    font-family: "Playwrite AU TAS", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* payment */
+.modal-body table th {
+    border-right: 2px solid gray;
+}
+.modal-body table th:nth-child(2){
+    border: none;
+}
+.payment-logo {
+    width: 40px;
+}
+.cover-price {
+    background-color: #cccccc6d;
+}
+.cover-price h6 > span {
+    font-size: 1rem;
+    float: right;
+}

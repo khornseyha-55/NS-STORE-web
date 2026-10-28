@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS STORE</title>
+    <link rel="stylesheet" href="/SRC/page/about.css">
+    <link rel="stylesheet" href="/SRC/page/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center gap-3 w-100">
+            <a href="#" class="nav-brand me-3" onclick="showPage('home')">NS <span>ŚTØ</span>RE </a>
+            <div class="search-wrap">
+                <div class="search-results" id="searchInput"></div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="nav-links">
+                    <li><a href="/index.html" >Home</a></li>
+                    <li><a href="/SRC/page/Products.html">Shop</a></li>
+                    <li><a href="/SRC/page/about.html" class="active">About</a></li>
+                    <li><a href="/index.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button class="icon-btn theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+                    <i class="fa fa-moon" id="themeIcon"></i>
+                    </button>
+                    <a href="/SRC/page/checkout.html" class="icon-btn" onclick="openCart()" title="Cart">
+                        <i class="fa fa-bag-shopping"></i>
+                        <span class="badge-pill" id="cartBadge">0</span>
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#mymodal" class="icon-btn" title="Sign UP">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    
+    <section>
+        <div class="modal" id="mymodal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="fw-bold">Register *</h3>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                            <form class="Register-form">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="firstname" class="form-label">First name *</label>
+                                    <input type="text" class="form-control" aria-label="First Name" id="firstname">
+                                </div>
+                                <div class="col">
+                                    <label for="Lastname" class="form-label">Last name *</label>
+                                    <input type="text" class="form-control" aria-label="Last name" id="Lastname">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Username" class="form-label">Username *</label>
+                                    <input type="text" class="form-control" id="Username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" placeholder="emailName@gmail.com" id="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password *</label>
+                                    <input type="password" class="form-control" placeholder="abc/123/#@" id="password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ConfirmPassword" class="form-label" >Confirm Password *</label>
+                                    <input type="password" class="form-control" id="ConfirmPassword" placeholder="The same password">
+                                </div>
+                            </div>
+                            <div class=" mb-3 d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold btn-primary mx-1 w-50" type="submit">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-flude">
+            <div class="poster-slide">
+                <div class="poster-title">
+                    <h1 class="text-center text-white">NS STORE</h1>
+                    <h4 class="text-white text-center">Best Price | Best Quality </h4>
+                    <div class="poster-btn text-center p-2">
+                        <a href="/SRC/page/Products.html" class="btn btn-custome btn-outline-primary shadow fw-bold text-white">SHOP NOW</a href="/SRC/page/Products.html">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-5 p-5 fw-bold reveal">About us</h2>
+        <div class="container">
+            <div class="row p-5 ">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="about-us-title reveal">
+                        <div class="text-info fw-bold h4 pb-4 text-center">
+                            
+                            
+                        </div>
+                        <h1 class="fw-bold p-2">NS STORE</h1>
+                        <p class="text-black">Phuler Shop is a premium HTML template designed and develoved from the ground up with the sole purpose of helping you create an astonishing, the beautiful and user friendly website that will boost your product's sales.</p>
+                        <P class="text-black">The theme design package provides a complete Magento theme set for your online store according to your desired theme. This includes all Magento themes that are required for your online store's successful implementation.</P>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="img-show reveal">
+                        <img src="https://arno.group/files/_processed_/2/3/csm_globetrotter_440da61863.webp" class="w-100 rounded-2 shadow" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="img-show reveal">
+                        <img src="https://studyhub.org.uk/wp-content/uploads/2023/09/cheerful-successful-middle-aged-manager-businessman-holding-tablet-computer-large-warehouse-organizing-distribution.jpg" class="w-100 rounded-2 shadow" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="about-us-title reveal">
+                        <h2 class="fw-bold p-2">Manager</h2>
+                        <p class="text-black">Phuler Shop is a premium HTML template designed and develoved from the ground up with the sole purpose of helping you create an astonishing, the beautiful and user friendly website that will boost your product's sales.</p>
+                        <P class="text-black">The theme design package provides a complete Magento theme set for your online store according to your desired theme. This includes all Magento themes that are required for your online store's successful implementation.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <h3 class="p-3 fw-bold text-center reveal">Template Features</h3>
+            <div class="cover-template reveal">
+                <div class="row ">
+                    <div class="col-12 col-md-12 col-lg-4 icon-1">
+                        <h5 class="mb-2"><img src="/SRC/Assect/image/html.png" class="m-1"> <span class="mb-1">HTML 5</span></h5>
+                        <h5 class="mb-2"><img src="/SRC/Assect/image/bootstrap.png" class="m-1"> <span class="mb-1">bootstrap</span></h5>
+                        <h5 class="mb-2"><img src="/SRC/Assect/image/css-3.png" class="m-1"> <span class="mb-1">CSS 3</span></h5>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 build">
+                        <h4 class=" fw-bold text-center teams">MY TEAMS</h4>
+                        <div id="build" class="carousel slide" data-bs-ride="carousel">
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner cover-build">
+                            <div class="carousel-item active ">
+                                <div class="build-cover">
+                                    <img src="/SRC/Assect/image/sleam.png" alt="NAk" class="d-block build-img">
+                                    <div class=" title mt-2">
+                                            <!-- <h3><span class="auto-type"></span></h3> -->
+                                        <h6 class="fw-bold">founder * <span>Math Sloem</span></h6>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active ">
+                                <div class="build-cover">
+                                    <img src="/SRC/Assect/image/Nak-1.png" alt="NAk" class="d-block build-img">
+                                    <div class=" title mt-2">
+                                            <!-- <h3><span class="auto-type"></span></h3> -->
+                                        <h6 class="fw-bold"> Designer * <span>Sal Rotanak</span></h6>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-caption -->
+                            <div class="carousel-item">
+                                 <div class="build-cover">
+                                    <img src="/SRC/Assect/image/seyha.png" alt="NAk" class="d-block build-img">
+                                    <div class=" title mt-2">
+                                        <div class="Text-animation">
+                                            <h6 class="fw-bold">Develop * <span>KHORN SEYHA</span></h6>
+                                        </div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                 <div class="build-cover">
+                                    <img src="/SRC/Assect/image/chek.png" alt="chek" class="d-block build-img">
+                                    <div class=" title mt-2">
+                                        <div class="Text-animation">
+                                            <h6 class="fw-bold">Supporter * <span>KHEN CHEK</span></h6>
+                                        </div>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#build" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#build" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 icon-1 mt-2">
+                        <h5 class="mb-2"><img src="/SRC/Assect/image/js.png" class="m-1"> <span class="mb-1">javascipt</span></h5>
+                        <h5 class="mb-2"><img src="https://img.icons8.com/color/1200/google-fonts.jpg" class="m-1"> <span class="mb-1">Google Font</span></h5>
+                        <h5 class="mb-2"><img src="/SRC/Assect/image/flag.png "  class="m-1"> <span class="mb-1">Icon </span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-1 border-secandery w-100 mt-5"></div>
+        <div class="container">
+            <div class="cover-brand reveal">
+                <div class="brand-wrapper">
+                    <div class="wrapper">
+                        <div class="logo"><img src="/SRC/Assect/image/logos/1.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/2.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/3.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/4.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/5.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/6.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/7.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/8.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/9.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/10.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/11.svg" alt="" /></div>
+                        <!-- doublicate -->
+                        <div class="logo"><img src="/SRC/Assect/image/logos/1.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/2.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/3.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/4.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/5.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/6.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/7.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/8.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/9.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/10.svg" alt="" /></div>
+                        <div class="logo"><img src="/SRC/Assect/image/logos/11.svg" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <div class="container-fluid">
+        <div class="cover-cnter mt-4 reveal">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="conter-icon shadow-sm border border-1 border-secandery rounded-2 mt-1 text-show ">
+                        <img src="/SRC/Assect/image/free-delivery.png" class="pb-2 pt-1" alt="">
+                        <h6>Worldwide Delivery</h6>
+                        <p class="p-1">With sites in 5 languages, we ship to over 200 countries & regions.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="conter-icon shadow-sm border border-1 border-secandery rounded-2 mt-1  text-show">
+                        <img src="/SRC/Assect/image/secure-payment.png" class="pb-2 pt-1" alt="">
+                        <h6>Safe Payment</h6>
+                        <p class="p-1">Pay with the world's most popular and secure payment methods.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="conter-icon shadow-sm border border-1 border-secandery rounded-2 mt-1  text-show">
+                        <img src="/SRC/Assect/image/trust.png" class="pb-2 pt-1" alt="">
+                        <h6>Shop with Confidence</h6>
+                        <p class="p-1">Our Buyer Protection covers your purchase from click to delivery.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <div class="conter-icon shadow-sm border border-1 border-secandery rounded-2 mt-1  text-show">
+                        <img src="/SRC/Assect/image/support.png" class="pb-2 pt-1" alt="">
+                        <h6>24/7 Help Center</h6>
+                        <p class="p-1">Round-the-clock assistance for a smooth shopping experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="container-fluid">
+            <footer>
+                <address>
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer-1 mb-2">
+                                <h4 class="mb-4">CONTECT US</h4>
+                                <h6>info@myks.com </h6>
+                                <h6>Mainstreet, Svay Reng, Phnom Phen</h6>
+                                <abbr title="Phone">Phone:</abbr> +885 222 12 32
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer-2 mb-2">
+                                <h4 class="mb-4">SUPPORT</h4>
+                                <a href="#show-all">Shop</a> <br>
+                                <a href="#about">About</a> <br>
+                                <a href="#contect">Contect</a> <br>
+                                <a href="#"  data-bs-toggle="modal" data-bs-target="#mymodal">Login</a> <br>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer-3">
+                                <h4 class="mb-4">QUICK LINKS</h4>
+                                <a href="">Privacy Policy</a> <br>
+                                <a href="">Accessibility Statement</a> <br>
+                                <a href="">Terms & Conditions</a> <br>
+                                <a href="">Shipping Policy</a> <br>
+                                <a href="">Refund Policy</a> <br>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="footer-4 reveal">
+                                <div class="icon-wrapper">
+                                    <div class="button Facebook">
+                                        <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                                        <span>Facebook</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper">
+                                    <div class="button TikTok">
+                                        <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
+                                        <span>TikTok</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper">
+                                    <div class="button twitter">
+                                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                                        <span>twitter</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper">
+                                    <div class="button GitHub">
+                                        <div class="icon"><i class="fa-brands fa-github"></i></div>
+                                        <span>GitHub</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </address>
+            </footer>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <div class="copyright fw-bold bg-black text-white p-2">
+            <p>Copyright &copy 2026 Design & develop by ❤️" Rotanak Chek Sloem and SEYHA "</p>
+        </div>
+    </div>
+    <button class="scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <img src="/SRC/Assect/image/rocket.png" alt="" class="w-100">
+    </button>
+
+    <script src="/SRC/page/script.js"></script>
+</body>
+</html>
